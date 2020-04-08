@@ -21,6 +21,7 @@ def bubble_sort(arr):
     for i in range(len(arr)):
         swapped = False
 
+        # compare adjacent elements, decrease limit with each pass
         for x in range(len(arr) - i - 1):
             if arr[x] > arr[x+1]:
                 arr[x], arr[x+1] = arr[x+1], arr[x]
