@@ -28,10 +28,8 @@ def merge_sort(arr):
     # TO-DO
     if len(arr) > 1:
         middle = len(arr) // 2
-        left_arr = arr[:middle]
-        right_arr = arr[middle:]
-        merge_sort(left_arr)
-        merge_sort(right_arr)
+        left_arr = merge_sort(arr[:middle])
+        right_arr = merge_sort(arr[middle:])
 
         return merge(left_arr, right_arr)
     return arr
