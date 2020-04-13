@@ -3,8 +3,6 @@ def merge(arrA, arrB):
     # elements = len(arrA) + len(arrB)
     merged_arr = []
 
-    a = 0
-    b = 0
     # TO-DO
     while len(arrA) > 0 and len(arrB) > 0:
         if arrA[0] < arrB[0]:
@@ -38,7 +36,7 @@ def merge_sort(arr):
 # STRETCH: implement an in-place merge sort algorithm
 def merge_in_place(arr, start, mid, end):
     # TO-DO
-
+    
     return arr
 
 
